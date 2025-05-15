@@ -21,7 +21,7 @@ class Notecard extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               'Flutter Tips',
-              style: TextStyle(fontSize: 32, color: Colors.black),
+              style: TextStyle(fontSize: 30, color: Colors.black),
             ),
             subtitle: Padding(
               padding: const EdgeInsets.symmetric(vertical: 24),
