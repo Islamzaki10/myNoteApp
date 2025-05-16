@@ -12,12 +12,7 @@ class NotesViewBody extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 18),
         child: Column(
-          children: [
-            SizedBox(height: 5),
-            CustomAppBar(),
-            SizedBox(height: 15),
-            Expanded(child: NotesListView()),
-          ],
+          children: [CustomAppBar(), Expanded(child: NotesListView())],
         ),
       ),
     );
