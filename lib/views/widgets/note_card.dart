@@ -29,7 +29,7 @@ class Notecard extends StatelessWidget {
                 'build your career with Islam Osman',
                 style: TextStyle(
                   fontSize: 18,
-                  color: Colors.black.withOpacity(.5),
+                  color: Color.fromRGBO(0, 0, 0, .5),
                 ),
               ),
             ),
@@ -44,7 +44,7 @@ class Notecard extends StatelessWidget {
               '21may,2025',
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.black.withOpacity(.5),
+                color: Color.fromRGBO(0, 0, 0, .5),
               ),
             ),
           ),
