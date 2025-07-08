@@ -9,12 +9,12 @@ class SimpleBlocObserver implements BlocObserver {
 
   @override
   void onClose(BlocBase bloc) {
-    // TODO: implement onClose
+    print('Bloc closed: ${bloc.runtimeType}');
   }
 
   @override
   void onCreate(BlocBase bloc) {
-    // TODO: implement onCreate
+    print('Bloc created: ${bloc.runtimeType}');
   }
 
   @override
