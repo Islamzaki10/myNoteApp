@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:note_app/models/note_model.dart';
 import 'package:note_app/views/edit_note_view.dart';
 
 class Notecard extends StatelessWidget {
-  const Notecard({super.key});
+  const Notecard({super.key, required this.note});
+  final NoteModel note;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class Notecard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: Color(0xffffcc80),
+          color: Color(note.color),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Column(
@@ -32,13 +34,13 @@ class Notecard extends StatelessWidget {
               title: Text(
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                'Flutter Tips',
+                note.title,
                 style: TextStyle(fontSize: 30, color: Colors.black),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 24),
                 child: Text(
-                  'build your career with Islam Osman',
+                  note.subtitle,
                   style: TextStyle(
                     fontSize: 18,
                     color: Color.fromRGBO(0, 0, 0, .5),
@@ -57,7 +59,7 @@ class Notecard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(right: 8),
               child: Text(
-                '21may,2025',
+                note.date,
                 style: TextStyle(
                   fontSize: 16,
                   color: Color.fromRGBO(0, 0, 0, .5),
