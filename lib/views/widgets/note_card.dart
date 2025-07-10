@@ -48,7 +48,9 @@ class Notecard extends StatelessWidget {
                 ),
               ),
               trailing: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  note.delete();
+                },
                 icon: Icon(
                   FontAwesomeIcons.trash,
                   color: Colors.black,
