@@ -1,0 +1,60 @@
+{
+  "Flutter Widget Format": {
+    "prefix": "fwf",
+    "body": [
+      "return Scaffold(",
+      "  body: ${1:Widget}(",
+      "    $2",
+      "  ),",
+      ");"
+    ],
+    "description": "Format Flutter Widget with proper indentation"
+  },
+  "Flutter Column Format": {
+    "prefix": "fcol",
+    "body": [
+      "Column(",
+      "  children: [",
+      "    $1,",
+      "  ],",
+      ")"
+    ],
+    "description": "Format Flutter Column with proper indentation"
+  },
+  "Flutter Row Format": {
+    "prefix": "frow",
+    "body": [
+      "Row(",
+      "  children: [",
+      "    $1,",
+      "  ],",
+      ")"
+    ],
+    "description": "Format Flutter Row with proper indentation"
+  },
+  "Flutter Container Format": {
+    "prefix": "fcon",
+    "body": [
+      "Container(",
+      "  child: ${1:Widget}(",
+      "    $2",
+      "  ),",
+      ")"
+    ],
+    "description": "Format Flutter Container with proper indentation"
+  },
+  "Flutter ListView Format": {
+    "prefix": "flv",
+    "body": [
+      "ListView.builder(",
+      "  itemCount: ${1:items.length},",
+      "  itemBuilder: (context, index) {",
+      "    return ${2:Widget}(",
+      "      $3",
+      "    );",
+      "  },",
+      ")"
+    ],
+    "description": "Format Flutter ListView.builder with proper indentation"
+  }
+}
